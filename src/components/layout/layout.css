@@ -1,0 +1,62 @@
+.trigger {
+    font-size: 18px;
+    line-height: 64px;
+    padding: 0 24px;
+    cursor: pointer;
+    transition: color .3s;
+  }
+  
+.trigger:hover {
+    color: #1890ff;
+}
+
+.ant-layout-sider {
+    background: #fff;
+}
+
+.ant-layout { 
+    height: 100%;
+}
+
+.ant-menu-item {
+    margin-top: 0px !important;
+}
+
+.rightWarpper {
+    float: right;
+    display: flex;
+    padding-right: 16px;
+    height: 100%;
+}
+
+.ant-menu-horizontal {
+    border-bottom: none !important;
+    line-height: 64px !important;
+}
+
+.ant-menu-horizontal .ant-menu-submenu {
+    height: 100%;
+    border-bottom: none !important;
+}
+
+.ant-menu-horizontal > .ant-menu-submenu:hover {
+    color: #1890ff;
+    background-color: rgba(24, 144, 255, 0.15);
+}
+
+.ant-menu-submenu > .ant-menu {
+    text-align: center;
+}
+
+.ant-menu-submenu-popup {
+    right: 16px !important;
+    left: auto !important;
+}
+
+.ant-menu-vertical .ant-menu-item {
+    margin-top: 4px !important;
+}
+
+.ant-layout-content {
+    overflow-y: scroll;
+}

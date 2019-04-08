@@ -1,0 +1,46 @@
+{
+  "name": "directory",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "antd": "^3.10.9",
+    "axios": "^0.18.0",
+    "body-parser": "^1.18.3",
+    "classnames": "^2.2.6",
+    "cors": "^2.8.4",
+    "react": "^16.6.3",
+    "react-avatar-editor": "^11.0.4",
+    "react-dom": "^16.6.3",
+    "react-dropzone": "^8.0.3",
+    "react-router-dom": "^4.3.1",
+    "react-scripts": "2.1.1",
+    "sharp": "^0.21.0"
+  },
+  "config": {
+    "host": "10.1.10.48",
+    "port": "80"
+  },
+  "scripts": {
+    "start": "nodemon api/app.js",
+    "client": "cross-env HOST=$npm_package_config_host PORT=$npm_package_config_port react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ],
+  "devDependencies": {
+    "activedirectory2": "^1.2.6",
+    "cross-env": "^5.2.0",
+    "express": "^4.16.4",
+    "nodemon": "^1.18.4",
+    "xlsx": "^0.14.0"
+  }
+}
