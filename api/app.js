@@ -3,13 +3,14 @@ const bodyParser = require('body-parser');
 var cors = require('cors');
 var employeeUtil = require('./util/employee-util');
 var pictureUtil = require('./util/picture-util');
+var environment = require('./environment');
 
 const app = express();
 app.use(bodyParser.json({limit: '50mb', extended: true}));
 app.use(bodyParser.urlencoded({limit: '50mb', extended: true }));
 
 var corsOptions = {
-  origin: ['http://localhost', 'http://localhost:4900','http://10.1.10.48','http://10.1.10.48:4900', 'http://dir.ananthtech.com'],
+  origin: ['http://localhost:3000'],
   optionsSuccessStatus: 200,
 };
 app.use(cors(corsOptions));
@@ -27,6 +28,7 @@ app.post('/api/world', (req, res) => {
 
 // To authenticate user through active directory
 app.post('/api/authenticate', function (req, res) {
+    console.log('auth')
   const emailId = req.body.emailId;
   const password = req.body.password;
   if (!emailId || !password) {
@@ -104,6 +106,6 @@ app.post('/api/uploadpicture', function (req, res) {
     });
   });
 
-const port = 9000;
-const host = '10.1.10.48';
+const port = environment.port;
+const host = environment.hostServer;
 app.listen(port, host, () => console.log(`Listening on port ${port}`));
