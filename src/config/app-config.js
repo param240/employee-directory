@@ -1,3 +1,3 @@
 export const config = {
-    defaultDomain: '@ananthtech.com'
+    defaultDomain: '@abc.com'
 }

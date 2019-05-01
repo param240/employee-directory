@@ -17,8 +17,8 @@
     "sharp": "^0.21.0"
   },
   "config": {
-    "host": "10.1.10.48",
-    "port": "80"
+    "host": "localhost",
+    "port": "3000"
   },
   "scripts": {
     "start": "nodemon api/app.js",
